@@ -40,6 +40,14 @@ const onQuery = async () => {
 </script>
 
 <template>
+  <p>
+    <a
+      href="https://github.com/spiffytech/colleges-search-ai-embeddings-tech-demo"
+    >
+      Source
+    </a>
+  </p>
+
   <button
     type="button"
     v-for="q in Object.keys(queryEmbeddings)"
