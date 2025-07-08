@@ -15,18 +15,18 @@ const data: {
   similarityScore: number;
 }[] = dataRaw as unknown as any;
 
-const query = ref("");
-
 const data2 = ref(data);
+const activeQuery = ref<string>("");
 
-const onQuery = async () => {
-  if (!query.value) {
+const searchForQuery = async (query: keyof typeof queryEmbeddings) => {
+  activeQuery.value = query;
+
+  if (!query) {
     data2.value = data;
     return;
   }
 
-  //const vector = await generateEmbeddings(query.value);
-  const vector = queryEmbeddings[query.value as keyof typeof queryEmbeddings]!;
+  const vector = queryEmbeddings[query as keyof typeof queryEmbeddings]!;
   console.log(vector);
   const withSimilarity = data.map((d) => {
     const similarityScore = similarity(vector, d.vector) ?? 0;
@@ -50,16 +50,13 @@ const onQuery = async () => {
 
   <button
     type="button"
-    v-for="q in Object.keys(queryEmbeddings)"
-    @click="
-      query = q;
-      onQuery();
-    "
+    v-for="q in Object.keys(queryEmbeddings) as Array<keyof typeof queryEmbeddings>"
+    @click="searchForQuery(q)"
   >
     {{ q }}
   </button>
 
-  <p id="query">Query: {{ query || "None" }}</p>
+  <p id="query">Query: {{ activeQuery || "None" }}</p>
 
   <div v-for="d in data2">
     <header v-if="d.department">{{ d.department }}</header>
