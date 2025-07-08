@@ -9,7 +9,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@huggingface/transformers": "^3.6.1",
     "@types/bun": "^1.2.18",
     "compute-cosine-similarity": "^1.1.0",
     "openai": "^5.8.2",

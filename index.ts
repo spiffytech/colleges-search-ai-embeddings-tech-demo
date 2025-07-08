@@ -1,20 +1,5 @@
-import { pipeline } from "@huggingface/transformers";
 import similarity from "compute-cosine-similarity";
 import OpenAI from "openai";
-
-// Create pipeline once at module level to reuse the same model instance
-const extractor = await pipeline(
-  "feature-extraction",
-  //"Xenova/all-MiniLM-L6-v2"
-  //"Xenova/bge-base-en-v1.5",
-  "Xenova/e5-large-v2",
-  { dtype: "fp32" }
-);
-
-const generateEmbeddings = async (text: string): Promise<number[]> => {
-  const output = await extractor(text, { pooling: "mean", normalize: true });
-  return Array.from(output.data);
-};
 
 const openai = new OpenAI({ apiKey: process.env.openAiKey });
 const generateEmbeddings2 = async (texts: string[]) => {
@@ -24,9 +9,6 @@ const generateEmbeddings2 = async (texts: string[]) => {
   });
   return response.data.map((item) => item.embedding);
 };
-
-// warm start download model
-await generateEmbeddings("Your input text here.");
 
 import data from "./data2.json";
 for (const d of data) {
