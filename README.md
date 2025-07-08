@@ -1,5 +1,9 @@
-# Vue 3 + TypeScript + Vite
+[View the web app](https://college-depts-ai-embedding-demo.netlify.app)
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+# ⚠️ WARNING: ⚠️: Terrible code ahead!
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+This is a mega-hacky tech demo of using AI embeddings to search through a list
+of colleges and departments.
+
+I've made zero effort to make either the code or the interface any good. I just
+wanted to prove whether the idea had any merit. It does!
