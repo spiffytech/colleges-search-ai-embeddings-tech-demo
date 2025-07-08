@@ -1,7 +1,6 @@
 <script setup lang="ts">
-import { ref, computed, onMounted } from "vue";
+import { ref, onMounted } from "vue";
 
-import { pipeline } from "@huggingface/transformers";
 import similarity from "compute-cosine-similarity";
 
 import dataRaw from "./embeddings.json";
@@ -15,26 +14,6 @@ const data: {
   vector: number[];
   similarityScore: number;
 }[] = dataRaw as unknown as any;
-
-let extractor;
-const ready = ref(false);
-
-onMounted(async () => {
-  // Create pipeline once at module level to reuse the same model instance
-  extractor = await pipeline(
-    "feature-extraction",
-    //"Xenova/all-MiniLM-L6-v2"
-    //"Xenova/bge-base-en-v1.5",
-    "Xenova/e5-large-v2",
-    { dtype: "fp32" }
-  );
-  ready.value = true;
-});
-
-const generateEmbeddings = async (text: string): Promise<number[]> => {
-  const output = await extractor!(text, { pooling: "mean", normalize: true });
-  return Array.from(output.data);
-};
 
 const query = ref("");
 
@@ -61,8 +40,6 @@ const onQuery = async () => {
 </script>
 
 <template>
-  <p>{{ ready }}</p>
-
   <button
     type="button"
     v-for="q in Object.keys(queryEmbeddings)"
@@ -74,6 +51,8 @@ const onQuery = async () => {
     {{ q }}
   </button>
 
+  <p id="query">Query: {{ query || "None" }}</p>
+
   <div v-for="d in data2">
     <header v-if="d.department">{{ d.department }}</header>
     <header>{{ d.college }}</header>
@@ -83,6 +62,11 @@ const onQuery = async () => {
 </template>
 
 <style scoped>
+#query {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
 header {
   font-size: 1.5rem;
   font-weight: bold;
