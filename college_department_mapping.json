@@ -1,0 +1,182 @@
+[
+  {
+    "college": "College of Agriculture and Life Sciences",
+    "department": null,
+    "summary": "summaries/College_of_Agriculture_and_Life_Sciences.txt"
+  },
+  {
+    "college": "College of Agriculture and Life Sciences",
+    "department": "Agricultural and Human Sciences",
+    "summary": "summaries/Agricultural_and_Human_Sciences.txt"
+  },
+  {
+    "college": "College of Agriculture and Life Sciences",
+    "department": "Agricultural Institute",
+    "summary": "summaries/Agricultural_Institute.txt"
+  },
+  {
+    "college": "College of Agriculture and Life Sciences",
+    "department": "Crop and Soil Sciences",
+    "summary": "summaries/Crop_and_Soil_Sciences.txt"
+  },
+  {
+    "college": "College of Agriculture and Life Sciences",
+    "department": "Entomology and Plant Pathology",
+    "summary": "summaries/Entomology_and_Plant_Pathology.txt"
+  },
+  {
+    "college": "College of Design",
+    "department": null,
+    "summary": "summaries/College_of_Design.txt"
+  },
+  {
+    "college": "College of Design",
+    "department": "Architecture",
+    "summary": "summaries/Design_Architecture.txt"
+  },
+  {
+    "college": "College of Design",
+    "department": "Graphic Design",
+    "summary": "summaries/Design_Graphic_Design.txt"
+  },
+  {
+    "college": "College of Design",
+    "department": "Industrial Design",
+    "summary": "summaries/Design_Industrial_Design.txt"
+  },
+  {
+    "college": "College of Design",
+    "department": "Landscape Architecture and Environmental Planning",
+    "summary": "summaries/Design_Landscape_Architecture.txt"
+  },
+  {
+    "college": "College of Design",
+    "department": "Media Arts, Design and Technology",
+    "summary": "summaries/Design_Media_Arts_Design_and_Technology.txt"
+  },
+  {
+    "college": "College of Education",
+    "department": null,
+    "summary": "summaries/College_of_Education.txt"
+  },
+  {
+    "college": "College of Engineering",
+    "department": "Computer Science",
+    "summary": "summaries/Engineering_Computer_Science.txt"
+  },
+  {
+    "college": "College of Humanities and Social Sciences",
+    "department": null,
+    "summary": "summaries/College_of_Humanities_and_Social_Sciences.txt"
+  },
+  {
+    "college": "College of Humanities and Social Sciences",
+    "department": "Philosophy and Religious Studies",
+    "summary": "summaries/Humanities_and_Social_Sciences_Philosophy_and_Religious_Studies.txt"
+  },
+  {
+    "college": "College of Humanities and Social Sciences",
+    "department": "World Languages and Cultures",
+    "summary": "summaries/Humanities_and_Social_Sciences_World_Languages_and_Cultures.txt"
+  },
+  {
+    "college": "College of Natural Resources",
+    "department": null,
+    "summary": "summaries/College_of_Natural_Resources.txt"
+  },
+  {
+    "college": "Poole College of Management",
+    "department": null,
+    "summary": "summaries/Poole_College_of_Management.txt"
+  },
+  {
+    "college": "Poole College of Management",
+    "department": "Accounting",
+    "summary": "summaries/Poole_College_of_Management_Accounting.txt"
+  },
+  {
+    "college": "Poole College of Management",
+    "department": "Business Management",
+    "summary": "summaries/Poole_College_of_Management_Business_Management.txt"
+  },
+  {
+    "college": "Poole College of Management",
+    "department": "Economics",
+    "summary": "summaries/Poole_College_of_Management_Economics.txt"
+  },
+  {
+    "college": "Poole College of Management",
+    "department": "Management, Innovation and Entrepreneurship",
+    "summary": "summaries/Poole_College_of_Management_Management_Innovation_and_Entrepreneurship.txt"
+  },
+  {
+    "college": "College of Sciences",
+    "department": null,
+    "summary": "summaries/College_of_Sciences.txt"
+  },
+  {
+    "college": "College of Sciences",
+    "department": "Biological Sciences",
+    "summary": "summaries/Sciences_Biological_Sciences.txt"
+  },
+  {
+    "college": "College of Sciences",
+    "department": "Chemistry",
+    "summary": "summaries/Sciences_Chemistry.txt"
+  },
+  {
+    "college": "College of Sciences",
+    "department": "Marine, Earth, and Atmospheric Sciences",
+    "summary": "summaries/Sciences_Marine_Earth_and_Atmospheric_Sciences.txt"
+  },
+  {
+    "college": "College of Sciences",
+    "department": "Mathematics",
+    "summary": "summaries/Sciences_Mathematics.txt"
+  },
+  {
+    "college": "College of Sciences",
+    "department": "Statistics",
+    "summary": "summaries/Sciences_Statistics.txt"
+  },
+  {
+    "college": "Wilson College of Textiles",
+    "department": null,
+    "summary": "summaries/Wilson_College_of_Textiles.txt"
+  },
+  {
+    "college": "Wilson College of Textiles",
+    "department": "Textile and Apparel, Technology and Management",
+    "summary": "summaries/Textiles_Textile_and_Apparel_Technology_and_Management.txt"
+  },
+  {
+    "college": "Wilson College of Textiles",
+    "department": "Textile Engineering, Chemistry and Science",
+    "summary": "summaries/Textiles_Textile_Engineering_Chemistry_and_Science.txt"
+  },
+  {
+    "college": "College of Veterinary Medicine",
+    "department": null,
+    "summary": "summaries/College_of_Veterinary_Medicine.txt"
+  },
+  {
+    "college": "The Graduate School",
+    "department": null,
+    "summary": "summaries/The_Graduate_School.txt"
+  },
+  {
+    "college": "University College",
+    "department": null,
+    "summary": "summaries/University_College.txt"
+  },
+  {
+    "college": "University College",
+    "department": "Exploratory Studies",
+    "summary": "summaries/University_College_Exploratory_Studies.txt"
+  },
+  {
+    "college": "University College",
+    "department": "Theatre",
+    "summary": "summaries/University_College_Theatre.txt"
+  }
+]
