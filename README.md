@@ -41,3 +41,8 @@ generate the suggested queries.
 search results using cosine similarity. I just order matches by similarity
 without applying a cutoff since
 it's a tech demo.
+
+In a real project I'd have a robust pipeline and not an ad-hoc [Taco Bell
+programming](http://widgetsandshit.com/teddziuba/2010/10/taco-bell-programming.html)
+shell history. I'd also use a vector database (likely pgvector) to store &
+search the data, instead of sending everything to the client and filtering in JS.
